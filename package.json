@@ -1,0 +1,35 @@
+{
+  "name": "insta-photos",
+  "version": "1.0.0",
+  "description": "Node plugin for Instagram API",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbybro/insta-photos.git"
+  },
+  "keywords": [
+    "nodejs",
+    "instagram"
+  ],
+  "author": "robbybro <robbybrosman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robbybro/insta-photos/issues"
+  },
+  "homepage": "https://github.com/robbybro/insta-photos#readme",
+  "devDependencies": {
+    "axios-mock-adapter": "^1.9.0",
+    "express": "^4.16.1",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "underscore": "^1.8.3"
+  }
+}

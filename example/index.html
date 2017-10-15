@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram Photos Test</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            axios.get('/photos').then(res => {
+                let $photos = $('.photos');
+                _.each(res.data, photo => {
+                    let div = $('<img>').attr('src', photo.images.standard_resolution.url);
+                    $photos.append(div);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Instagram Photos Test</h1>
+        <div class="photos"></div>
+    </body>
+</html>

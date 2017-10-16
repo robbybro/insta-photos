@@ -1,6 +1,5 @@
 const _ = require('underscore');
 const axios = require('axios');
-const jasmine  = require('assert');
 const MockAdapter = require('axios-mock-adapter');
 const instaPhotos = require('../index.js');
 const secrets = require('../src/secrets.js');
